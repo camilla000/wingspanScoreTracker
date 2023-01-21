@@ -1,0 +1,125 @@
+
+
+/* body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-attachment: fixed;
+  background-size:  100% 100%;
+
+
+
+} */ 
+
+/* added styles to display the elements in a table */
+/* table {
+  border-collapse: collapse;
+  width: 60%; */
+  /* put it on the center of the page */
+  /* margin-left: 5%;
+  margin-right: auto; */
+  /* margin-top:15%; */
+  /* background-color: #dddddd; */
+  /* add opacity to the background color */
+  /* opacity: 0.8;
+  border-radius: 3%;
+} */
+/* td,
+th {
+  border-radius: 3%;
+  /* border: 1px solid #65299F; 
+  text-align: center;
+  padding: 8px;
+} 
+/* added styles for the button */
+/* button { */
+  /* background-color: #ebd9ae;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  border: 1px solid #c9b484;
+} */
+/* 
+.minus {
+  color: red;
+}
+
+.plus {
+  color: green; */
+/* }
+
+.text {
+  color: #11258a;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15%;
+  margin-right: auto; */
+  /* margin-top:15%; */
+/* }
+
+.content {
+  margin-top: 10%;
+} */
+
+
+body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size:  100% 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0;
+  background-color: #dddddd;
+  opacity: 0.8;
+  border-radius: 3%;
+  grid-row: 2 / 3;
+}
+
+td, th {
+  border-radius: 3%;
+  text-align: center;
+  padding: 8px;
+}
+
+button {
+  background-color: #ebd9ae;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  border: 1px solid #c9b484;
+}
+
+.text {
+  color: #11258a;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.minus {
+  color: red;
+}
+
+.plus {
+  color: green; 
+}
