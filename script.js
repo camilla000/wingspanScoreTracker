@@ -1,20 +1,33 @@
 function updateScore(amount, playerId) {
   var playerScore = document.getElementById(playerId);
-  playerScore.innerHTML = parseInt(playerScore.innerHTML) + amount;
+  playerScore.innerHTML = updateAmount(parseInt(playerScore.innerHTML) + amount);
 }
 
 function updateGames(amount, playerId) {
   var playerGames = document.getElementById(playerId);
-  playerGames.innerHTML = parseInt(playerGames.innerHTML) + amount;
+  playerGames.innerHTML = updateAmount(parseInt(playerGames.innerHTML) + amount);
 }
 
-function putDataIntoDom() {
+function updateAmount(val) {
+  return Math.max(0, val);
+}
 
-  let data = {
-    name: "Camilla",
-    games: 0,
-    victories: 0
-  };
+function createDefaultTable() {
+
+  let defaultData = [
+    {name:'Bertie', games:0, victories:0},
+    {name:'Camilla', games:0, victories:0},
+    {name:'Edwin', games:0, victories:0},
+    {name:'Julius', games:0, victories:0},
+    {name:'Marissa', games:0, victories:0},
+    {name:'Mary', games:0, victories:0},
+  ];
+
+  for (let data of defaultData)
+    putDataIntoDom(data);
+}
+
+function putDataIntoDom(data) {
 
   let table = document.getElementById('score-table');
 
