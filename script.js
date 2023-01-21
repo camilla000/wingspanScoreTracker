@@ -24,11 +24,11 @@ function putDataIntoDom() {
   let tdVictories = document.createElement('td');
 
   let playerGamesId = data.name + "-games";
+  let playerVictoriesId = data.name + "-victories";
 
   tdName.innerText = data.name;
-  //tdGames.innerHTML = `<button class='minus' onclick='updateGames(-1, '${playerGamesId}')'>-</button> <span id='${playerGamesId}'>0</span> <button class='plus' onclick='updateGames(1, '${playerGamesId}')'>+</button>`;
-  tdGames.innerHTML = `<button class='minus' onclick='updateGames(-1, '${playerGamesId}')'>-</button>`;
-  tdVictories.innerText = data.victories;
+  tdGames.innerHTML = `<button class='minus' onclick="updateGames(-1, '${playerGamesId}')">-</button> <span id='${playerGamesId}'>0</span> <button class='plus' onclick="updateGames(1, '${playerGamesId}')">+</button>`;
+  tdVictories.innerHTML = `<button class='minus' onclick="updateGames(-1, '${playerVictoriesId}')">-</button> <span id='${playerVictoriesId}'>0</span> <button class='plus' onclick="updateGames(1, '${playerVictoriesId}')">+</button>`;
 
   tr.appendChild(tdName);
   tr.appendChild(tdGames);
